@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>FORMULARIO</title>
+</head>
+<H1>INFORMACION DE USUARIO</H1>
+<body id="cuerpo">
+<form name="form1" method="post"action="" id="miformulario">
+<table id="tabla" width="25%" id="mitabla">
+<tr>
+    <td>nombre</td>
+    <td><label for="textname"></label>
+    <input type="text" id="textname" name="textname">
+    </td>
+</tr>
+
+<tr>
+    <td>apellidos</td>
+    <td><label for="textap"></label>
+    <input type="text" id="textap" name="textap">
+    </td>
+</tr>
+
+<tr>
+    <td>edad</td>
+    <td><label for="textedad"></label>
+    <input type="text" id="textedad" name="textedad">
+    </td>
+</tr>
+
+<tr>
+    <td>carnet</td>
+    <td><label for="textcarnet"></label>
+    <input type="text" id="textcarnet" name="textcarnet">
+    </td>
+</tr>
+
+<tr>
+    <td><input type="submit" name="button" id="button" value="enviar"></td>
+    <td><input type="reset" name="button2" id="button2" value="reset"></td>
+</tr>
+
+
+
+</table>
+
+</form>
+
+
+<script>
+/*
+var cuerpo=document.getElementById("cuerpo");
+var colorweb=prompt("ingrese el color que desea de fondo de formulario.Azul,rojo o verde");
+
+if (colorweb=="Azul"){
+
+    cuerpo.style.backgroundColor="blue";
+}
+
+else if(colorweb=="rojo"){
+    cuerpo.style.backgroundColor="red";
+}
+
+else if(colorweb=="verde"){
+    cuerpo.style.backgroundColor="green";
+}
+*/
+///////////////////////
+
+//var tabla=document.getElementById("tabla");
+
+/*
+var colorweb=prompt("ingrese el color que desea de fondo de formulario.Azul,rojo o verde");
+
+backcolor=colorweb.toLowerCase();
+
+
+document.write(backcolor);
+
+if (backcolor=="azul"){
+
+
+    tabla.style.backgroundColor="blue";
+}
+
+else if(backcolor=="rojo"){
+    tabla.style.backgroundColor="red";
+}
+
+else if(backcolor=="verde"){
+    tabla.style.backgroundColor="green";
+}
+
+*/
+var colorweb=prompt("ingrese el color que desea de fondo de formulario.Azul,rojo o verde").toLocaleLowerCase();
+
+if(colorweb!="azul" && colorweb!="rojo" && colorweb&&"verde"){
+
+    alert("ingresa un color valido")
+}
+else if (colorweb=="azul"){
+
+cuerpo.style.backgroundColor="blue";
+}
+
+else if(colorweb=="rojo"){
+cuerpo.style.backgroundColor="red";
+}
+
+else if(colorweb=="verde"){
+cuerpo.style.backgroundColor="green";
+}
+
+
+
+</script>
+    
+</body>
+</html>
